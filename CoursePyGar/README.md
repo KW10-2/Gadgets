@@ -21,7 +21,7 @@
 
 由于本次选课系统隐藏了已满课程的`选择`按钮，因此进行使用方法简单更新：
 
-1. 登录选课系统
+1. 登录选课系统；
 
 2. 随意选择一门未满课程，页面空白处右键选择检查或者F12打开开发者模式，选择`网络`，如下图所示。
 
@@ -34,8 +34,15 @@
 
 4. 转到[Convert curl commands to code (curlconverter.com)](https://curlconverter.com/)网站，输入复制的cURL(bash)，转换为`python`代码，复制到剪切板；
 
-5. 用`python`开发环境（如`spyder`）打开CoursePyGar.py，将复制的代码粘贴至`import time`后面，修改变量`data`中的`teachingClassId`为目标课程ID（仅需改变课程号，如“2023202420030016002”中仅需将“00310820”修改为目标课程号），删除`response `变量定义；
+5. 下载`CoursePyGar.py`,用`python`开发环境（如`spyder`）打开`CoursePyGar.py`，将从curlconverter.com复制的代码粘贴至`import time`后面
 
-6. 调整循环中的`time.sleep(10)`休眠时间，运行所有代码即可。
+6. 修改变量`data`中的`teachingClassId`为目标课程ID（仅需改变课程号，如“2023202420030016002”中仅需将“00310820”修改为目标课程号），删除复制过来的变量`response `的定义；
 
-> 注意：若发生异常（如非法请求等），重登系统，替换cookies和headers重新尝试。
+7. 调整循环中的`time.sleep(10)`休眠时间，运行所有代码即可。显示“该课程超过课容量”即为正常情况，如下，可能需要运行1~4h才能选到，视运气而定。
+![image](https://github.com/KW10-2/Gadgets/assets/150025813/89acc8da-7759-400e-8ce5-440a8f3bb729)
+
+> 注意：
+> 若发生异常（如非法请求等），重登系统，替换cookies和headers重新尝试；
+> 记得退掉第2步选择的未满课程；
+> 可以并行运行多个脚本，`spyder`中只需打开多个控制台即可。
+> 若显示**“教学班不在开放选课轮次中”**，可尝试将`teachingClassId`结尾的“02”改为“01”（反之亦然）进行尝试。
