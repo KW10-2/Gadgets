@@ -24,11 +24,12 @@
 
 2. 随意选择一门未满课程，页面空白处右键选择检查或者F12打开开发者模式，选择`网络`，如下图所示。
 
-   ![image-20240226173139648](C:/Users/lvjih/.config/joplin-desktop/image-20240226173139648.png)
+  ![image](https://github.com/KW10-2/Gadgets/assets/150025813/859caa19-1842-4b35-9174-31f5c3ce5dba)
+
 
 3. 点击`选择`并确认选课，此时会出现名为`volunteer.do`的请求，复制为cURL(bash)；
 
-   ![image-20240226173402173](C:/Users/lvjih/.config/joplin-desktop/image-20240226173402173.png)
+![image](https://github.com/KW10-2/Gadgets/assets/150025813/4d145047-7f0f-4139-9d8b-43dd0093fdc9)
 
 4. 转到[Convert curl commands to code (curlconverter.com)](https://curlconverter.com/)网站，输入复制的cURL(bash)，转换为`python`代码，复制到剪切板；
 
