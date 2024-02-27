@@ -16,7 +16,7 @@
 >
 > 适当控制休眠时间`sleep`，不可设置过短，以免对选课系统造成过大压力，届时责任自负！
 
-  
+    
 ## 使用方法更新(2024.02.26)
 
 由于本次选课系统隐藏了已满课程的`选择`按钮，因此进行使用方法简单更新：
@@ -67,9 +67,9 @@ data = {
 }
 
 ```
-5. 下载`CoursePyGar.py`,用`python`开发环境（如`spyder`）打开`CoursePyGar.py`，将从curlconverter.com复制的代码粘贴至`import time`后面
+5. 下载`CoursePyGar.py`,用`python`开发环境（如`spyder`）打开`CoursePyGar.py`，将从curlconverter.com复制的代码粘贴至`#(paste and correct codes here)`中；
 
-6. 修改变量`data`中的`teachingClassId`为目标课程ID（仅需改变课程号，如“2023202420030016002”中仅需将“00310820”修改为目标课程号），删除复制过来的变量`response `的定义；
+6. 修改变量`data`中的`teachingClassId`为目标课程ID（仅需改变课程号，如“2023202420030016002”中仅需将“00310820”修改为目标课程号）；
 
 7. 调整循环中的`time.sleep(10)`休眠时间，运行所有代码即可。显示“该课程超过课容量”即为正常情况，如下，可能需要运行1~4h才能选到，视运气而定。选课成功后会退出循化，结束脚本运行。
 ![image](https://github.com/KW10-2/Gadgets/assets/150025813/89acc8da-7759-400e-8ce5-440a8f3bb729)
