@@ -6,6 +6,7 @@ Created on Mon Sep  4 21:13:04 2023
 """
 import json
 import time
+import requests
 
 #(paste and correct codes here)
 
